@@ -46,5 +46,6 @@ section {
 }
 
 input[type='submit'], input[type='reset'] {
-    display:block;
+    display:inline;
+    margin: 10px 2%;
 }

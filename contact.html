@@ -25,7 +25,7 @@
     <main>
         <h1 id="page-title">Contact us if your community or one you know is affected by the digital divide</h1>
         <p>* indicates required</p>
-        <form action="#">
+        <form action="#" id="contact-form">
             <fieldset class="your-info">
                 <legend>Your information</legend>
                 <section>
@@ -50,7 +50,7 @@
 
                 <section>
                     <label for="country">Country:</label>
-                    <input id="country" name="country" type="text" value="United States">
+                    <input id="country" name="country" type="text" value="United States" onchange="removeState()">
                 </section>
 
                 <section>
@@ -139,9 +139,9 @@
                 <section>
                     <label for="speed">How is their internet speed?</label>
                     <div class="slider">
-                        <p>Very slow</p>
+                        <p>Nonexistant</p>
                         <input id="speed" name="speed" type="range">
-                        <p>Very fast</p>
+                        <p>Fast</p>
                     </div>
                 </section>
 
@@ -158,6 +158,10 @@
                 </section>
             </fieldset>
         </form>
+        <div class="button-container">
+            <input type="submit" form="contact-form">
+            <input type="reset" form="contact-form">
+        </div>
     </main>
 
     <footer>
