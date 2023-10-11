@@ -1,0 +1,133 @@
+.image {
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: blur(3.5px);
+}
+  
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 5px 10px; 
+    font-size: 30px; 
+    text-align: center;
+}
+
+.overlay-text-2 {
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;  
+    font-size: 18px; 
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.item {
+    width: 300px;
+    border: 2px solid black;
+    color: white;
+    background-color: purple;
+}
+
+.item-2 {
+    width: 300px;
+    border: 2px solid #323131;
+    color: white;
+    background-color: purple;
+}
+
+.item:hover {
+    box-shadow: 15px 15px 15px 15px rgb(32, 31, 31);
+    cursor: pointer;
+}
+
+.item-2:hover {
+    box-shadow: 15px 15px 15px 15px rgb(32, 31, 31);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  form li + li {
+    margin-top: 5rem;
+}
+  
+label {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+}
+  
+input,
+  textarea {
+    font: 1em sans-serif;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+  
+textarea {
+    vertical-align: top;
+    height: 9em;
+}
+  
+.button {
+    padding-left: 90px;
+}
+  
+button {
+    margin-left: 0.5em;
+}
