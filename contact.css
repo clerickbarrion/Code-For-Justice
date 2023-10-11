@@ -4,12 +4,11 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    flex-wrap: wrap;
-}
-
 main {
     margin: auto 15%;
+    width:initial;
+    display:flex;
+    flex-direction: column;
 }
 
 #page-title {
@@ -17,8 +16,9 @@ main {
 }
 
 form {
-    width: 70%;
     display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 fieldset {
@@ -43,6 +43,11 @@ section {
 
 .slider {
     display:flex;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 input[type='submit'], input[type='reset'] {
