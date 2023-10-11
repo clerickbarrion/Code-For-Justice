@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    flex-wrap: wrap;
+}
+
+main {
+    margin: auto 15%;
+}
+
+#page-title {
+    color: black;
+}
+
+form {
+    width: 70%;
+    display:flex;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.your-info input, select {
+    max-width: 50%;
+}
+
+.community-info > section {
+    flex-direction: column;
+    margin: 5px 1px;
+}
+
+.slider {
+    display:flex;
+}
+
+input[type='submit'], input[type='reset'] {
+    display:block;
+}
