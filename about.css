@@ -53,6 +53,57 @@ li a {
 main {
     width: 100%;
 }
+h2{
+    text-align: center;
+    font-size:30px;
+}
+
+#missLabel{
+    margin-bottom:0;
+}
+.mission
+{ width: 90%;
+    display:inline-flex;
+    margin: 20px;
+    font-size: 22px;
+    justify-content: center;
+}
+
+#missState{
+    width: 40%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    background-color: lightgray;
+  }
+#sharing{
+    height:200px;
+    
+}
+
+#core{
+    text-align: center;
+}
+#commIMG {
+    border-radius:550px;
+    margin-right:20px;
+   
+}
+
+article{ width: 90%;
+    display:inline-flex;
+    margin: 40px;
+}
+
+aside{
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+    padding:15px;
+}
+
+
+
 /*footer*/
 footer {
     width:100%;
