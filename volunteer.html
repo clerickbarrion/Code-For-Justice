@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RuralTech</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="vol-page.css" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
@@ -21,7 +22,57 @@
         </nav>
     </header>
 
-    <main>placeholder</main>
+    <main>
+        <div class="image-container">
+            <img class="image" src="images/images.jpeg" alt="Kids getting computers">
+            <div class="overlay-text"><h2>Make A DIFFERENCE</h2></div>
+            <div class="overlay-text-2">Help today because one day you might need help yourself</div>
+        </div>
+
+        <div class="flex-container">
+            <div class="item"><h2>Our Mission</h2>
+                <p>
+                    Our mission in volunteering is driven by a deep commitment to making a positive impact on the lives of those in need and the communities we serve. 
+                    We believe that by dedicating our time, skills, and resources, we can create meaningful change and contribute to a better, more inclusive world. 
+                    Our goal is to inspire and empower individuals to join us in our mission, fostering a sense in unity and shared responsibility for the well-being of others. 
+                    Through our collective efforts we aim to address social issues, provide support to those facing adversity, and ultimately, leave a lasting legacy of compassion and kindness.
+                </p>
+            </div>
+            <div class="item-2"><h2>Donate To Us</h2>
+                <p>
+                    Your contribution to our cause is a powerful force for change. When you donate to us, 
+                    you are not merely giving money; you are investing in a brighter, more equitable future. 
+                    Your support enables us to continue our vital work. Every donation, regardless of its size, has a profound impact. 
+                    It allows us to extend our reach, helping more people in need and making a real difference in their lives. 
+                    We are deeply grateful for your generosity, as it fuels our mission and fuels hope for those we serve.
+                    Please consider donating to us and being a part of this transformative journey toward a better world.
+                </p>
+            </div>
+        </div>
+        <form action="#">
+            <p>* Indicates Required</p>
+            <h2 class="tag">Volunteer Form</h2>
+            <label for="name">*Name:</label>
+            <input type="text" id="fname" name="fname" required placeholder="First and Last Name"> 
+            <br>
+            <br>
+            <label for="eaddress">*Email Address:</label>
+            <input type="text" id="eaddress" name="eaddress" required placeholder="user@gmail.com">
+            <br>
+            <br>
+             <label for="Phone#">Phone#:</label>
+            <input type="Phone#" id="Phone#" name="Phone#" placeholder="000-000-0000">
+            <br>
+            <br>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+              <br>
+            <br>
+              <input class="btn" type="submit" value="Submit">
+              </form>
+           <br>
+           <br>
+    </main>
 
     <footer>
         <ul>

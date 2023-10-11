@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+body {
+    background-color: rgb(33, 33, 33);
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 400px);
+}
+
+.image-container {
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card p {
+    color: white;
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#card1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+#card2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#card3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
