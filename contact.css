@@ -3,6 +3,19 @@ body {
     background-size:50%;
 }
 
+.logo {
+    width: 170px;
+    border-radius: 20%;
+} 
+
+.logo-2 {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 20.4cm;
+    margin: 0px 0px;
+} 
+
 main {
     margin: auto 15%;
     width:initial;

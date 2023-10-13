@@ -8,6 +8,19 @@ body {
     background-color: rgb(33, 33, 33);
 }
 
+.logo {
+    width: 170px;
+    border-radius: 20%;
+} 
+
+.logo-2 {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 20.4cm;
+    margin: 0px 0px;
+} 
+
 .content-container {
     display: grid;
     grid-template-rows: 100px 500px 100px 500px 100px 500px 100px;
