@@ -37,7 +37,7 @@ const _back = () => {
     back.style.display = 'none'
 }
 
-windowCheck()
+
 //form validation
 
 const removeState = () => {
@@ -99,3 +99,4 @@ const response = () => {
 if (window.location.href.includes('contact-response')) {
     response()
 }
+windowCheck()
