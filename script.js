@@ -93,7 +93,14 @@ const response = () => {
     date = date.replace('%3A', ':')
 
     date = new Date(date)
-    document.getElementById('response').innerText = `Thank you for reaching out to us, ${firstName} ${lastName}, we will visit your community on: ${date}.`
+
+    let firstHalf = `Thank you for reaching out to us, ${firstName} ${lastName}.`
+    let secondHalf = ''
+
+    if (date != 'Invalid Date') {
+        secondHalf = ` We will visit your community on: ${date}.`
+    }
+    document.getElementById('response').innerText = firstHalf + secondHalf
 }
 
 if (window.location.href.includes('contact-response')) {
