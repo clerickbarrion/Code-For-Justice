@@ -4,15 +4,27 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-image: url(https://media.istockphoto.com/id/1407063872/vector/modern-abstract-background-with-black-gradient-abstract-black-business-background.webp?b=1&s=612x612&w=0&k=20&c=mTlCH90SoZ-hD-nbFkcix4YEQaieptt2k_Hv5bSguz0=);
+    background-size:50%;
+}
+
 main {
     margin: auto 15%;
     width:initial;
     display:flex;
     flex-direction: column;
+    color: purple;
+    background-color: white;
 }
 
 #page-title {
-    color: black;
+    color: purple;
+    margin: 22px;
+}
+
+main p {
+    margin: 22px;
 }
 
 form {
@@ -24,6 +36,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-color: purple
 }
 
 section {
@@ -50,13 +63,14 @@ section {
 }
 
 #next, #back {
-    margin-top: 5px;
+    margin: 5px auto;
     background-color: purple;
     color: white;
     border: none;
     font-size: 1.5rem;
     padding: 2px;
-    display:none
+    width: 99%;
+    display:none;
 }
 
 input[type='submit'], input[type='reset'] {
@@ -64,10 +78,21 @@ input[type='submit'], input[type='reset'] {
     margin: 10px 2%;
     width: 20%;
     font-size:20px;
+    color: white;
+    background-color: purple;
+}
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 255, 220);
+}
+input:focus:invalid {
+	background-color: rgb(255, 232, 233);
 }
 
 #response {
     font-size:32px;
+    padding: 10%;
+    text-align: center;
 }
 
 
