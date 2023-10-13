@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    background-color: rgb(33, 33, 33);
+}
+
 .image {
     width: 100%;
 }
@@ -10,7 +20,7 @@
 .image-container img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 0 auto;
     filter: blur(3.5px);
 }
   
@@ -43,78 +53,86 @@
     margin: 20px;
 }
 
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.text {
+    text-align: center;
+    color: white;
+}
+
 .item {
-    width: 300px;
-    border: 2px solid black;
+    width: 470px;
+    border: 2px solid white;
     color: white;
     background-color: purple;
+    border-radius: 20%;
 }
 
 .item-2 {
-    width: 300px;
-    border: 2px solid #323131;
+    width: 470px;
+    border: 2px solid white;
     color: white;
     background-color: purple;
+    border-radius: 20%;
 }
 
 .item:hover {
-    box-shadow: 15px 15px 15px 15px rgb(32, 31, 31);
+    box-shadow: 8px 8px 8px 8px rgb(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
 .item-2:hover {
-    box-shadow: 15px 15px 15px 15px rgb(32, 31, 31);
+    box-shadow: 8px 8px 8px 8px rgb(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
 .tag {
     display: flex;
-   justify-content: center;
-   padding: 5px 5px;
-   border: 1px solid purple;
+    justify-content: center;
+    padding: 5px 5px;
+    border: 1px solid purple;
+    color: white;
+}
+
+section {
+    display: flex;
 }
 
 form {
-    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-left: 440px;
     width: 800px;
     padding: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid purple;
     border-radius: 1em;
 }
   
 label {
-    display: inline-block;
     width: 100px;
-    padding-left: 250px;
-    padding-top: 15px;
+    padding-left: 230px;
+    padding-top: 5px;
+    color: white;
 }
   
 input {
-    font: 1em sans-serif;
     width: 200px;
-    box-sizing: border-box;
     border: 1px solid #999;
+    margin: 10px;
+    cursor: pointer;
+    color: purple;
 }
 
 input:hover {
     background-color: gray;
-    cursor: pointer;
-    color: purple;
 }
 
 #msg:hover {
     background-color: gray;
     cursor: pointer;
     color: purple;
-}
-  
-.btn {
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
-
-.btn:hover {
-    color: rgba(146, 0, 151, 0.5);
 }
 
 .logo {
@@ -123,19 +141,131 @@ input:hover {
 } 
 
  .logo-2 {
-    width: 65px;
-    position: relative;
-    top: 14px;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 20.4cm;
+    margin: 0px 0px;
 } 
 
-/* .logo {
-    width: 110px;
-    position: relative;
-    top: 10px;
-    border-radius: 20%;
+@media screen and (max-width: 767px){
+    footer, header, main {
+    }
+    header, nav {
+        display: inline;
+        justify-content: center;
+        opacity: 0.8;
+        width: 767px;
+        height: 55.6px;
+    }
+    ul{
+        margin-left: 41px;
+        margin-top: 0px;
+        padding-bottom: 25px;
+    }
+    .logo-2 {
+        position: absolute;
+        top: 7px;
+        width: 70px;
+        height: 50px;
+    }
+    .overlay-text{
+        font-size: 35px;
+    }
+    .overlay-text-2 {
+        position: absolute;
+        top: 70%; 
+        left: 50%; 
+        font-size: 21px; 
+        text-align: center;
+    }
+    main {
+        width: 767px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 760px;
+    }
+    form {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 400px;
+    }
+    label {
+        padding-left: 70px;
+    }
+    footer {
+        width: 767px;
+    }
 }
 
-.logo-2 {
-    width: 155px;
-    border-radius: 30%;
-} */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    footer, header, main {
+    }
+    header, nav {
+        display: inline;
+        justify-content: center;
+        opacity: 0.8;
+        width: 1023px;
+        height: 55.6px;
+    }
+    ul{
+     margin-left: 40px;
+     margin-top: 0px;
+     margin-bottom: 10px;
+    }
+    .logo-2 {
+        position: absolute;
+        top: 3px;
+        width: 80px;
+        height: 60px;
+    }
+    main {
+        width: 1023px;
+    }
+    .flex-container {
+        gap: 40px;
+    }
+    form {
+        margin-left: 125px;
+        width: 700px;
+    }
+    footer {
+        width: 1023px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    footer, header, main {
+    }
+    header, nav {
+        display: inline;
+        justify-content: center;
+        opacity: 0.8;
+        width: 1680px;
+        height: 56.6px;
+    }
+    ul{
+     margin-left: 40px;
+     margin-top: 0px;
+    }
+    .logo-2 {
+        position: absolute;
+        top: 3px;
+        width: 80px;
+        height: 60px;
+    }
+    main {
+        width: 1680px;
+    }
+    form {
+        margin-left: 400px;
+    }
+    footer {
+        width: 1680px;
+    }
+}
