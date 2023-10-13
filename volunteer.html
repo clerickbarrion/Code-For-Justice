@@ -64,8 +64,9 @@
             </div>
         </div>
         <form action="#">
+            <fieldset class="legend_tag">
             <p class="text">* Indicates Required</p>
-            <h2 class="tag">Volunteer Form</h2>
+            <legend class="tag">Volunteer Form</legend>
             <section>
                 <label for="name">*Name:</label>
                 <input type="text" id="fname" name="fname" required placeholder="First and Last Name">
@@ -86,9 +87,10 @@
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message"></textarea>
             </section>
-            <section>
-                <input class="btn" type="submit" value="Submit">
+            <section class="btn">
+                <input type="submit" value="Submit">
             </section>
+        </fieldset>
         </form>
     </main>
 
