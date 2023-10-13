@@ -4,12 +4,8 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
+body {
     background-color: rgb(33, 33, 33);
-}
-
-.image {
-    width: 100%;
 }
 
 .image-container {
@@ -19,8 +15,8 @@ main {
   
 .image-container img {
     display: block;
-    width: 100%;
-    height: 0 auto;
+    width: 1418px;
+    height: 750px;
     filter: blur(3.5px);
 }
   
@@ -43,6 +39,16 @@ main {
     color: white;  
     font-size: 18px; 
     text-align: center;
+}
+
+.overlay-text:hover {
+    background-color: black;
+    width: 650px;
+}
+
+.overlay-text-2:hover {
+    background-color: black;
+    width: 450px;
 }
 
 .flex-container {
@@ -146,7 +152,7 @@ input:hover {
     border-radius: 20%;
 } 
 
- .logo-2 {
+.logo-2 {
     width: 55px;
     height: 55px;
     position: absolute;
@@ -157,23 +163,14 @@ input:hover {
 @media screen and (max-width: 767px){
     footer, header, main {
     }
-    header, nav {
-        display: inline;
-        justify-content: center;
-        opacity: 0.8;
-        width: 100%;
-        height: 55.6px;
-    }
-    ul{
-        margin-left: 41px;
-        margin-top: 0px;
-        padding-bottom: 25px;
-    }
+     ul{
+        margin-left: 10px;
+    }  
     .logo-2 {
         position: absolute;
         top: 7px;
-        width: 70px;
-        height: 50px;
+        width: 63px;
+        height: 55px;
     }
     .overlay-text{
         font-size: 20px;
@@ -219,23 +216,14 @@ input:hover {
 @media screen and (min-width: 768px) and (max-width: 1023px){
     footer, header, main {
     }
-    header, nav {
-        display: inline;
-        justify-content: center;
-        opacity: 0.8;
-        width: 100%;
-        height: 55.6px;
-    }
     ul{
-     margin-left: 40px;
-     margin-top: 0px;
-     margin-bottom: 10px;
-    }
+     margin-left: 10px;
+    } 
     .logo-2 {
         position: absolute;
         top: 3px;
-        width: 80px;
-        height: 60px;
+        width: 60px;
+        height: 50px;
     }
     .overlay-text{
         font-size: 30px;
@@ -279,23 +267,6 @@ input:hover {
 
 @media screen and (min-width: 1024px){
     footer, header, main {
-    }
-    header, nav {
-        display: inline;
-        justify-content: center;
-        opacity: 0.8;
-        width: 100%;
-        height: 56.6px;
-    }
-    ul{
-     margin-left: 40px;
-     margin-top: 0px;
-    }
-    .logo-2 {
-        position: absolute;
-        top: 3px;
-        width: 80px;
-        height: 60px;
     }
     main {
         width: 100%;

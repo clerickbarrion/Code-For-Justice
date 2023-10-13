@@ -37,6 +37,11 @@ main {
     font: 100 2vw 'Montserrat', 'sans-serif';
 }
 
+.logo {
+    width: 170px;
+    border-radius: 20%;
+} 
+
 @media screen and (max-width: 767px) {
     .content-container {
         flex-direction: column;
