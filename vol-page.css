@@ -67,67 +67,75 @@
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tag {
+    display: flex;
+   justify-content: center;
+   padding: 5px 5px;
+   border: 1px solid purple;
+}
 
 form {
     margin: 0 auto;
-    width: 500px;
-    padding: 1em;
+    width: 800px;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 1em;
 }
   
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-  
-  form li + li {
-    margin-top: 5rem;
-}
-  
 label {
     display: inline-block;
-    width: 50px;
-    text-align: right;
+    width: 100px;
+    padding-left: 250px;
+    padding-top: 15px;
 }
   
-input,
-  textarea {
+input {
     font: 1em sans-serif;
     width: 200px;
     box-sizing: border-box;
     border: 1px solid #999;
 }
-  
-textarea {
-    vertical-align: top;
-    height: 9em;
+
+input:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: purple;
+}
+
+#msg:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: purple;
 }
   
-.button {
-    padding-left: 90px;
+.btn {
+    background-color: white;
+    color: rgb(0, 0, 0);
 }
-  
-button {
-    margin-left: 0.5em;
+
+.btn:hover {
+    color: rgba(146, 0, 151, 0.5);
 }
+
+.logo {
+    width: 170px;
+    border-radius: 20%;
+} 
+
+ .logo-2 {
+    width: 65px;
+    position: relative;
+    top: 14px;
+} 
+
+/* .logo {
+    width: 110px;
+    position: relative;
+    top: 10px;
+    border-radius: 20%;
+}
+
+.logo-2 {
+    width: 155px;
+    border-radius: 30%;
+} */

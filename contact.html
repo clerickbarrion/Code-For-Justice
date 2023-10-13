@@ -6,9 +6,8 @@
     <title>RuralTech</title>
     <link href="styles.css" rel="stylesheet">
     <link href="contact.css" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
-<body>
+<body onresize="windowCheck()">
     <header>
         <h1>Rural<mark>Tech</mark></h1>
         <nav>
@@ -25,7 +24,7 @@
     <main>
         <h1 id="page-title">Contact us if your community or one you know is affected by the digital divide</h1>
         <p>* indicates required</p>
-        <form action="#" id="contact-form">
+        <form action="contact-response.html" id="contact-form">
             <fieldset class="your-info">
                 <legend>Your information</legend>
                 <section>
@@ -45,7 +44,7 @@
 
                 <section>
                     <label for="phone">Phone:</label>
-                    <input id="phone" name="phone" type="tel" placeholder="(000)-000-0000">
+                    <input id="phone" name="phone" type="tel" placeholder="(000) 000-0000" pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}">
                 </section>
 
                 <section>
@@ -55,7 +54,7 @@
 
                 <section>
                     <label for="state">State:</label>
-                    <select id="state" name="state">
+                    <select id="state" name="state" required>
                         <option value="">--Select a State--</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -127,12 +126,18 @@
                 <section>
                     <p>Biggest Obstacle:</p>
                     <div class="radio">
-                        <input type="radio" name='obstacle' id="cost" value="cost">
-                        <label for="cost">Cost of Tech</label>
-                        <input type="radio" name='obstacle' id="infastructure" value="infastructure">
-                        <label for="infastructure">Lack of Infastructure</label>
-                        <input type="radio" name='obstacle' id="policy" value="policy">
-                        <label for="policy">Government Policies</label>
+                        <div>
+                            <input type="radio" name='obstacle' id="cost" value="cost">
+                            <label for="cost">Cost of Tech</label>
+                        </div>
+                        <div>
+                            <input type="radio" name='obstacle' id="infastructure" value="infastructure">
+                            <label for="infastructure">Lack of Infastructure</label>
+                        </div>
+                        <div>
+                            <input type="radio" name='obstacle' id="policy" value="policy">
+                            <label for="policy">Government Policies</label>
+                        </div>
                     </div>
                 </section>
 
@@ -149,7 +154,7 @@
                     <label for="date">
                         Select a time where we can meet with your community:
                     </label>
-                    <input id="date" name="date" type="datetime-local">
+                    <input id="date" name="date" type="datetime-local" onchange="checkDate()">
                 </section>
 
                 <section>
@@ -158,6 +163,8 @@
                 </section>
             </fieldset>
         </form>
+        <input id="next" type="button" value="Next" onclick="_next()">
+        <input id="back" type="button" value="Back" onclick="_back()">
         <div class="button-container">
             <input type="submit" form="contact-form">
             <input type="reset" form="contact-form">
@@ -183,4 +190,5 @@
         <img src="placeholder" alt="logo placeholder">
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

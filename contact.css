@@ -18,7 +18,6 @@ main {
 form {
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 fieldset {
@@ -50,7 +49,99 @@ section {
     justify-content: center;
 }
 
+#next, #back {
+    margin-top: 5px;
+    background-color: purple;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 2px;
+    display:none
+}
+
 input[type='submit'], input[type='reset'] {
     display:inline;
     margin: 10px 2%;
+    width: 20%;
+    font-size:20px;
+}
+
+#response {
+    font-size:32px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        margin: initial;
+    }
+    #page-title{
+        font-size: 2.5rem;
+    }
+    form{
+        flex-wrap: wrap;
+    }
+    fieldset {
+        width:100%;
+    }
+    .your-info section, legend {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .your-info section:last-child {
+        flex-direction: row;
+    }
+
+    .your-info section > input, select {
+        min-width: 50%;
+        font-size: 1.5rem;
+
+    }
+
+    .community-info, .community-info input, textarea {
+        font-size: 1.5rem;
+    }
+
+    #speed {
+        width: 50%;
+    }
+
+    input[type='submit'], input[type='reset'] {
+        display: flex;
+        justify-content: center;
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        margin: initial;
+    }
+    form{
+        flex-wrap: wrap;
+    }
+    fieldset {
+        width:100%;
+    }
+    .your-info section {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .your-info section:last-child {
+        flex-direction: row;
+    }
+
+    .your-info section > input, select {
+        max-width: 100%;
+    }
+
+    input[type='submit'], input[type='reset'] {
+        display: flex;
+        justify-content: center;
+        width:50%;
+    }
 }
