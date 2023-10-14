@@ -1,10 +1,9 @@
 @media screen and (min-width:1321px){
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
 
 html {
     width: 100%;
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -71,14 +70,13 @@ h2{
 }
 
 .mission
-{ width: 75%;
+{ width: 65%;
     height:9%;
-    
-    display:inline-flex;
-    margin-left: 14%;
+    display:flex;
     font-size: 1.4rem;
-    align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 5px 10px black;
+    margin-left: 17%;
    
 }
 
@@ -87,7 +85,6 @@ h2{
     width: 60%;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 15px;
     float: left;
     background-color: purple;
     margin-top: 0;
@@ -108,7 +105,13 @@ height: 108%;
 }
 .story{
     width:100%;
-    margin:0;}
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+    
    
    #storyLabel{
     margin-bottom:20px;
@@ -123,8 +126,8 @@ height: 108%;
     font-size: 1.4rem;
     background-color: purple;
     width:60%;
-    margin-left:15%;
-    
+       
+
 }
 
 #core{
@@ -141,7 +144,7 @@ height: 108%;
 }
 h3{
     font-size:24px;
-    font-weight: 1200;
+    font-weight: 1000;
     font-style: italic;
 }
 article{ width: 90%;
@@ -155,7 +158,7 @@ aside{
     padding:15px;
     font-weight: 800;
     font-size: 1.2rem;
-    
+    box-shadow: 10px 10px 5px 10px black;
 }
 #teamDis{
     text-align: center;
@@ -204,13 +207,10 @@ footer ul > li:nth-child(1) {
 
 
 @media screen and (min-width:768px) and (max-width:1320px){
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
-    
     html {
         width: 100%;
-        height: 100%;
-        font-family: 'Montserrat', sans-serif;
-    }
+        height: 100%;}
+     
     
     body {
         display:flex;
@@ -415,8 +415,7 @@ footer ul > li:nth-child(1) {
     }}
     
     @media screen and (max-width:767px){
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
-        
+     
         html {
             width: 100%;
             height: 100%;
@@ -557,7 +556,7 @@ footer ul > li:nth-child(1) {
     
         h3{
             font-size:24px;
-            font-weight: 1200;
+            font-weight: 1000;
             font-style: italic;
             text-align: center;
         }
@@ -614,7 +613,6 @@ footer ul > li:nth-child(1) {
             flex-wrap: wrap;
             justify-content: space-between;
             color: white;
-            margin-top: 20px;
         }
         
         footer > ul {
@@ -624,6 +622,18 @@ footer ul > li:nth-child(1) {
         
         footer ul > li:nth-child(1) {
             font-weight: bold;
+            font-size: 32px;
             margin-bottom: 10px;
-        }}
+        }
         
+        @media screen and (max-width: 767px) {
+            header {
+                justify-content: center;
+                flex-direction: column;
+            }
+            header > h1, header > nav, nav > ul {
+                text-align: center;
+                justify-content: center;
+                padding: 0;
+            }
+        }
