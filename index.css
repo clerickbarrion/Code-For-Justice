@@ -6,9 +6,8 @@ main {
     align-items: center;
     background: url(assets/homepagebg.jpg) no-repeat;
     background-size: cover;
-    width: 1920px;
-    height: 1080px;
     background-position: center;
+    width: 100%;
 }
 
 .titleCard {
@@ -20,7 +19,7 @@ main {
 .titleCard h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 64pt;
+    font-size: 6vw;
     font-weight: 700;
     margin: 0;
 }
@@ -35,5 +34,26 @@ main {
 .content-container p {
     width: 15%;
     color: white;
-    font: 100 24pt 'Montserrat', 'sans-serif';
+    font: 100 2vw 'Montserrat', 'sans-serif';
+}
+
+.logo {
+    width: 170px;
+    border-radius: 20%;
+} 
+
+@media screen and (max-width: 767px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-container p {
+        width: 30%;
+    }    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .content-container p {
+        width: 20%;
+    }    
 }
