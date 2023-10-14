@@ -472,7 +472,7 @@ footer ul > li:nth-child(1) {
             color: white;
             font-size: 20px;;
         }
-        
+
         /*main*/
         main {
             width: 100%;
@@ -624,9 +624,10 @@ footer ul > li:nth-child(1) {
             font-weight: bold;
             font-size: 32px;
             margin-bottom: 10px;
+
         }
         
-        @media screen and (max-width: 767px) {
+        
             header {
                 justify-content: center;
                 flex-direction: column;
@@ -636,4 +637,19 @@ footer ul > li:nth-child(1) {
                 justify-content: center;
                 padding: 0;
             }
-        }
+        
+
+
+        .logo {
+            width: 170px;
+            border-radius: 20%;
+        } 
+        
+         .logo-2 {
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            bottom: 20.5cm;
+            margin: 0px 0px;
+        } 
+      }
