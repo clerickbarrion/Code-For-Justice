@@ -1,4 +1,4 @@
-@media screen and (min-width:1024px){
+@media screen and (min-width:1321px){
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
 
 html {
@@ -69,9 +69,11 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .mission
 { width: 75%;
-    height:12%;
+    height:9%;
+    
     display:inline-flex;
     margin-left: 14%;
     font-size: 1.4rem;
@@ -91,11 +93,12 @@ h2{
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 20px;
-  }
+}
   #missText{
     margin:4px;
     text-align: center;
     padding-bottom: 20px;
+    height:100%;
     
 }
 #sharing{
@@ -200,7 +203,7 @@ footer ul > li:nth-child(1) {
 }}
 
 
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1320px){
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
     
     html {
@@ -374,13 +377,13 @@ footer ul > li:nth-child(1) {
         justify-content: space-between;
         text-align: center;
         position: relative;
-        margin:1px;
+        margin:8px;
     
     }
     
     .teamPics{
         height:400px;
-        width:50%;
+        width:35%;
         border-radius: 300px;
         margin-top: 25px;
     }
@@ -470,7 +473,7 @@ footer ul > li:nth-child(1) {
             color: white;
             font-size: 20px;;
         }
-        
+
         /*main*/
         main {
             width: 100%;
@@ -623,4 +626,16 @@ footer ul > li:nth-child(1) {
             font-weight: bold;
             margin-bottom: 10px;
         }}
+
+        .logo {
+            width: 170px;
+            border-radius: 20%;
+        } 
         
+         .logo-2 {
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            bottom: 20.5cm;
+            margin: 0px 0px;
+        } 
