@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
+.logo {
+    width: 170px;
+    border-radius: 20%;
+} 
+
+.logo-2 {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 20.4cm;
+    margin: 0px 0px;
+    top:0%;
+    left:2px;
+}
+
+header {
+    opacity: 1;
+}
+
 main {
     height: 100%;
     display: flex;
