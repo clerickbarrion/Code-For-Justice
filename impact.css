@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800&display=swap');
 
+nav li:after {
+    content: "";
+    position: relative;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+  }
+nav li:hover::after {
+    width: 100%;
+    height: 1px;
+    background-color: purple;
+  }
+
+.logo {
+    width: 170px;
+    border-radius: 20%;
+} 
+
+.logo-2 {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 20.4cm;
+    margin: 0px 0px;
+    top:0%;
+    left:2px;
+}
+
 html {
     font-family: 'Montserrat', sans-serif;
 }
