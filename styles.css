@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
+
 
 html {
-    width: 100%;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -12,34 +10,45 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin:0;
-}
+    background-color: rgb(207, 232, 207);}
 
 /*nav*/
-header {
-    background-color: black;
-    opacity: 0.8;
-    width: 100%;
-    display:flex;
+.title{
+    display: flex;
+    justify-content: center;
+   
+}
+.logo{
+    display: flex;
+   width: 14vw;
+   margin-bottom: -25px;
+   margin-top: -25px;
+   display: flex;
+   justify-content: center;
 }
 
-header > * {
-    display: inline-block;
-    margin: auto 15px;
+
+header {
+    background-color: rgb(29, 77, 46);
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+   
 }
 
 h1 {
-    color: white
+    color: rgb(0, 0, 0);
+    font-weight: 800;
 }
 
-mark {
-    background-color: inherit;
-    color: purple
-}
 
 ul {
     display: flex;
     flex-wrap:wrap;
     gap: 15px;
+    padding: 0;
 }
 
 li {
@@ -63,19 +72,28 @@ nav li:after {
 nav li:hover::after {
     width: 100%;
     height: 1px;
-    background-color: purple;
+    background-color: white;
   }
 
 /*footer*/
 footer {
     width:100%;
-    background-color: purple;
+    background-color: rgb(29, 77, 46);
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
+    align-items: center;
+    position: relative;
+    
 }
-
+h4{
+    margin-top:0px;
+    margin-bottom: 12px;
+}
+.info_form{ 
+    font-size: 32px;
+}
 footer > ul {
     display: flex;
     flex-direction: column;
@@ -87,6 +105,13 @@ footer ul > li:nth-child(1) {
     margin-bottom: 10px;
 }
 
+#footerLogo{
+    width: 8vw;
+    min-width:65px ;
+    height: 14vh;
+    border-radius: 250px;
+ }
+ 
 @media screen and (max-width: 768px) {
     header {
         justify-content: center;
@@ -97,8 +122,5 @@ footer ul > li:nth-child(1) {
         justify-content: center;
         padding: 0;
     }
-    .logo-2 {
-        position: initial;
-        margin:auto;
-    }
+  
 }
